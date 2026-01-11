@@ -42,7 +42,7 @@ packages:
       path: "plugins/flame2/plugin/box2d_flame-0.4.6"
       relative: true
     source: path
-    version: "0.4.6"
+    version: "1.4.6"
   characters:
     dependency: transitive
     description:
