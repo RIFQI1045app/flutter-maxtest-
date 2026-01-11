@@ -27,7 +27,7 @@ dependencies:
   flutter_archive: ^6.0.4
   draggable_fab: ^0.1.4
   rename: ^3.1.0
-  font_awesome_flutter: ^8.8.1
+  font_awesome_flutter: ^10.12.0
   firebase_admob: ^0.11.2
   flame:
     path: plugins/flame2/
