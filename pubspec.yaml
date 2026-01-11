@@ -22,7 +22,7 @@ environment:
   
 dependencies:
   expressions: ^0.1.5
-  mic_stream: ^0.2.1
+  mic_stream: ^0.7.2
   sensors: ^0.4.2+2
   flutter_archive: ^6.0.4
   draggable_fab: ^0.1.1
