@@ -26,11 +26,7 @@ workflows:
           -validity 10000
       - |
         # set up local properties
-        echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/android/local.properties"
-      - flutter upgrade
-      - flutter pub upgrade
-      - flutter pub upgrade --major-versions
-      - flutter pub get 
+        echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/android/local.properties" 
       - dart migrate
       - flutter clean
       - flutter packages pub get
