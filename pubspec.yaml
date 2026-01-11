@@ -23,10 +23,10 @@ environment:
 dependencies:
   expressions: ^0.2.5+3
   mic_stream: ^0.7.2
-  sensors: ^0.4.2+2
+  sensors: ^2.0.3
   flutter_archive: ^6.0.4
-  draggable_fab: ^0.1.1
-  rename: ^1.2.0
+  draggable_fab: ^0.1.4
+  rename: ^3.1.0
   font_awesome_flutter: ^8.8.1
   firebase_admob: ^0.11.2
   flame:
@@ -44,7 +44,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: "^0.7.3"
+  flutter_launcher_icons: "^0.14.4"
   
 
 
