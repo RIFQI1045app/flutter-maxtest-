@@ -28,7 +28,7 @@ dependencies:
   draggable_fab: ^0.1.1
   rename: ^1.2.0
   font_awesome_flutter: ^8.8.1
-  firebase_admob: ^0.9.3+4
+  firebase_admob: ^0.11.2
   flame:
     path: plugins/flame2/
   control_pad:
