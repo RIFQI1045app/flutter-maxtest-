@@ -65,11 +65,5 @@ flutter {
     source '../..'
 }
 
-dependencies {}            signingConfig = signingConfigs.getByName("debug")
-        }
-    }
-}
-
-flutter {
-    source = "../.."
-}
+dependencies {}
+    
