@@ -13,7 +13,7 @@ android {
     compileSdkVersion 34  // Always use the latest SDK
 
     defaultConfig {
-        applicationId "com.example.myapp"  // Your app's unique ID
+        applicationId "com.company"  // Your app's unique ID
         minSdkVersion 21  // Minimum Android version
         targetSdkVersion 34  // Target the latest Android version
         versionCode 1  // Internal version code
