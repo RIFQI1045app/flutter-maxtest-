@@ -1,30 +1,21 @@
-pluginManagement {
-    // Load Flutter SDK path from local.properties
-    def flutterSdkPath = {
-        def properties = new Properties()
-        file("local.properties").withInputStream { properties.load(it) }
-        def flutterSdkPath = properties.getProperty("flutter.sdk")
-        assert flutterSdkPath != null, "flutter.sdk not set in local.properties"
-        return flutterSdkPath
-    }()
+plugins {
+    // Android application plugin
+    id 'com.android.application' version '8.1.2' apply false
 
-    // Include Flutter's Gradle tools for building the project
-    includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
+    // Kotlin plugin for Android
+    id 'kotlin-android' version '1.9.0' apply false
 
+    // Google services plugin for Firebase integration
+    id 'com.google.gms.google-services' version '4.3.14' apply false
+}
+
+allprojects {
     repositories {
-        google()  // Android dependencies
-        mavenCentral()  // Common Java/Kotlin dependencies
-        gradlePluginPortal()  // Gradle plugin dependencies
+        google()          // Android dependencies
+        mavenCentral()    // General Java/Kotlin dependencies
     }
 }
 
-plugins {
-    // Plugin for Flutter builds
-    id "dev.flutter.flutter-plugin-loader" version "1.0.0"
-
-    // Android application plugin
-    id "com.android.application" version "8.1.2" apply false
-
-    // Kotlin plugin for Android
-    id "org.jetbrains.kotlin.android" version "1.9.0" apply false
+task clean(type: Delete) {
+    delete rootProject.buildDir  // Cleans up old build files
 }
